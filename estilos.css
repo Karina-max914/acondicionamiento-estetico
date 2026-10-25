@@ -1,0 +1,286 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 204, 189);
+    color: #eb6aa0;
+    font-size: 30px;
+
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header = Cabecera */
+header {
+    background-color: rgb(179, 212, 212);
+    padding: 20px;
+    margin: 40px;
+    border-bottom: 15px solid #3f3b3b;
+}
+header
+.container {/*Parrafos que contiene*/
+    display: flex; /*Modificar, buscando definicion de c/u*/
+    justify-content: space-between;/*Llevar a lo ultimo tto,ag,cont*/
+    align-items: self-start;
+}
+header h1 {/*abarca toda la cabecera*/
+    margin: 0;
+    color: #555;
+    font-style: initial;
+    font-size: 30px;
+    width: 8px;
+}
+
+header nav ul { /*titulos de extencion*//*Llevar a lo ultimo tto,ag,cont*/
+    list-style: none;
+    padding: 10px;
+    margin: 30px;
+    display: flex;
+    
+}
+
+header nav ul li {
+    margin-right: 50px;
+}
+
+header nav ul li a {
+    text-decoration-style: initial;
+    color: #1340d4;
+    font-weight: 20px
+    
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e9ecef;
+    padding: 8px 0;
+}
+
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tratamientos Section */
+.tratamientos {
+    padding: 60px 0;
+}
+
+.tratamientos h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tratamientos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.tratamiento-card {
+    background-color: #e0a2a2;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.tratamiento-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tratamiento-card h3 {
+    padding: 15px;
+    margin: 0;
+    font-size: 1.3em;
+    color: #333;
+    text-align: center;
+}
+
+.tratamiento-card p {
+    padding: 0 15px 15px;
+    margin: 0;
+    color: #666;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Agenda Section */
+.agenda {
+    background-color: #e9ecef;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.agenda h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.agenda p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.agenda-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {/*titulo de los datos*/
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group select {
+    padding: 10px;
+    border: 1px solid rgb(241, 77, 104);
+    border-radius: 4px;
+    font-size: 25px;
+}
+
+/* Contacto Section */
+.contacto {
+    padding: 60px 0;
+    margin: 20px;
+}
+
+.contacto h2 {
+    font-size: 40px;/*tamaño de Contactanos*/
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contacto p {
+    font-size: 28px;
+    color: brown;/*texto antes de los botones*/
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contacto-info {
+    display: grid;
+    grid-template-columns: 300px 250px 250px 300px;/*ancho de los botones columnas*/
+    gap: 80px; /*separacion entre los botones*/
+    text-align: center;
+    height: 10px;/*separacion de los botones al footer*/
+}
+
+.info-item {/*botones footer*/
+    padding: 20px;
+    background-color: rgb(240, 237, 195);
+    border-radius: 48px;/*redondeo de los botones*/
+}
+
+.info-item img {/*iconos*/
+    width: 200px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+
+.info-item p {/*datos personales*//*direcc,tel,email*/
+    margin: 0;
+    color: black;
+    font-size: large;
+}
+
+/* Footer */
+footer { /*Ultimo escrito */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+  
+}
+
+/* Botón Estilos */
+.button {/* Solicitar cita*/
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 500px;
+    font-weight: bold;
+    transition: background-color pink;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button.small {
+    padding: 8px 15px;
+    font-size: 50px;
+}
+
+/* Clases de Contenedor */
+.container {
+    /* Ya definido arriba */
+}
+
+/* Clases de Sección */
+.hero, .tratamientos, .agenda, .contacto {
+    padding: 80px 0;
+}
+
+/* Clase de Grid para Tratamientos */
+.tratamientos-grid {
+    /* Ya definido arriba */
+}
