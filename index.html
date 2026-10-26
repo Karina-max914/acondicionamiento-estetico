@@ -260,6 +260,18 @@
                 display: none;
             }
         }
+    .style-desplegable {
+  background-color: #f4f8f5;
+  border: 1px solid #d0e1d4;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.style-desplegable[open] {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}    
     </style>
 </head>
 <body>
@@ -292,33 +304,88 @@
     </section>
 
     <!-- TRATAMIENTOS SECTION -->
-    <section id="tratamientos" class="tratamientos">
-        <div class="container">
-            <h2>Nuestros Tratamientos Estrella</h2>
-            <div class="tratamientos-grid">
-                <div class="tratamiento-card">
-                    <img src="depilacion.jpg" alt="Depilación Láser">
-                    <h3>Depilación Láser Definitiva</h3>
-                    <p>Tecnología indolora y efectiva para una piel suave todo el año.</p>
-                </div>
-                <div class="tratamiento-card">
-                    <img src="tto facial exfolacion.jpg" alt="Tratamiento Facial">
-                    <h3>Tratamiento Facial & Glow</h3>
-                    <p>Regeneración profunda con Dermapen y alta cosmética.</p>
-                </div>
-                <div class="tratamiento-card">
-                    <img src="masaje-relajante-1.jpg" alt="Masaje Corporal">
-                    <h3>Masajes y Bienestar</h3>
-                    <p>Aliviá el estrés y relajá cuerpo y mente en un entorno único.</p>
-                </div>
-                <div class="tratamiento-card">
-                    <img src="manicuria y pedicuria.jpg" alt="Manicura Spa">
-                    <h3>Manicura y Pedicura Spa</h3>
-                    <p>Cuidado detallado y prolijo para manos y pies impecables.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="tratamientos" class="container my-5">
+  <h2 class="text-center mb-4" style="color: #2e5a44; font-weight: 600;">Nuestros Tratamientos</h2>
+
+  <!-- TRATAMIENTO 1: DERMAPEN -->
+  <details class="mb-3 p-3 style-desplegable">
+    <summary class="h5 font-weight-bold" style="cursor: pointer; color: #2e5a44; list-style: none;">
+      ✨ Dermapen / Microneedling
+    </summary>
+    <div class="row mt-3 align-items-center">
+      <div class="col-md-7">
+        <p>Tratamiento de inducción de colágeno que mejora la textura de la piel, atenúa marcas y aporta firmeza.</p>
+        <ul>
+          <li>Estimula la producción natural de colágeno.</li>
+          <li>Atenúa cicatrices de acné y líneas de expresión.</li>
+          <li>Mejora el aspecto de los poros dilatados.</li>
+        </ul>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="tto facial exfoliacion.jpg" alt="Dermapen" class="img-fluid rounded shadow-sm" style="max-height: 200px;">
+      </div>
+    </div>
+  </details>
+
+  <!-- TRATAMIENTO 2: EXOSOMAS / FACIAL GLOW -->
+  <details class="mb-3 p-3 style-desplegable">
+    <summary class="h5 font-weight-bold" style="cursor: pointer; color: #2e5a44; list-style: none;">
+      🌿 Tratamiento Facial & Glow (Exosomas)
+    </summary>
+    <div class="row mt-3 align-items-center">
+      <div class="col-md-7">
+        <p>Biotecnología avanzada de regeneración celular profunda para restaurar la vitalidad y luminosidad del rostro.</p>
+        <ul>
+          <li>Potente efecto regenerador y antiedad.</li>
+          <li>Combate la flacidez y devuelve el brillo natural.</li>
+          <li>Apto y personalizado para cada tipo de piel.</li>
+        </ul>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="Mujer recibiendo tra...jpg" alt="Facial Glow" class="img-fluid rounded shadow-sm" style="max-height: 200px;">
+      </div>
+    </div>
+  </details>
+
+  <!-- TRATAMIENTO 3: DEPILACIÓN DEFINITIVA -->
+  <details class="mb-3 p-3 style-desplegable">
+    <summary class="h5 font-weight-bold" style="cursor: pointer; color: #2e5a44; list-style: none;">
+      ⚡ Depilación Láser Definitiva y Aparatología
+    </summary>
+    <div class="row mt-3 align-items-center">
+      <div class="col-md-7">
+        <p>Tecnología de última generación para la eliminación progresiva del vello y cuidado corporal.</p>
+        <ul>
+          <li>Sesiones rápidas, seguras e indoloras.</li>
+          <li>Sistema de enfriamiento para máximo confort.</li>
+          <li>Resultados visibles desde las primeras aplicaciones.</li>
+        </ul>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="Depilacion definitiva...jpg" alt="Depilación Láser" class="img-fluid rounded shadow-sm" style="max-height: 200px;">
+      </div>
+    </div>
+  </details>
+
+  <!-- TRATAMIENTO 4: MASAJES Y BIENESTAR -->
+  <details class="mb-3 p-3 style-desplegable">
+    <summary class="h5 font-weight-bold" style="cursor: pointer; color: #2e5a44; list-style: none;">
+      💆‍♀️ Masajes y Bienestar
+    </summary>
+    <div class="row mt-3 align-items-center">
+      <div class="col-md-7">
+        <p>Técnicas descontracturantes y relajantes diseñadas para aliviar el estrés diario y tonificar.</p>
+        <ul>
+          <li>Alivia tensiones musculares.</li>
+          <li>Mejora la circulación y la relajación corporal.</li>
+        </ul>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="masaje-relajante-1.jpg" alt="Masajes" class="img-fluid rounded shadow-sm" style="max-height: 200px;">
+      </div>
+    </div>
+  </details>
+</section>
 
     <!-- AGENDA SECTION -->
     <section id="agenda" class="agenda">
